@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://www.hidrografico.pt/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Instituto Hidrográfico</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  	
+<!--<base href="https://www.hidrografico.pt">--><base href=".">
+	<!--<link rel='shortcut icon' href='resources/images/ico/favicon.ico' />-->
+	<!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+	<link rel="shortcut icon" href="https://www.hidrografico.pt/recursos/imagens/ico/favicon.ico">
+	<link rel="apple-touch-icon" href="https://www.hidrografico.pt/resources/images/ico/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://www.hidrografico.pt/resources/images/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://www.hidrografico.pt/resources/images/ico/apple-touch-icon-114x114.png">
+
+    <link href="./Instituto Hidrográfico_files/css" rel="stylesheet" type="text/css">
+	<link href="./Instituto Hidrográfico_files/css(1)" rel="stylesheet" type="text/css">
+	<link href="./Instituto Hidrográfico_files/css(2)" rel="stylesheet" type="text/css"> <!--Ana -->
+	<link href="./Instituto Hidrográfico_files/css(3)" rel="stylesheet" type="text/css"> <!--Ana -->
+	<link href="./Instituto Hidrográfico_files/css(4)" rel="stylesheet" type="text/css"> <!--Ana -->
+	<link href="./Instituto Hidrográfico_files/css(5)" rel="stylesheet" type="text/css"> <!--Ana -->
+
+    <link href="./Instituto Hidrográfico_files/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="./Instituto Hidrográfico_files/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+
+	<link href="./Instituto Hidrográfico_files/flags.css" rel="stylesheet" id="flags-css">
+	<!--
+	<link href='css/social-logos.css' rel='stylesheet' id='social-logos-css' />
+-->
+	<link href="./Instituto Hidrográfico_files/jquery.cookiebar.css" rel="stylesheet" type="text/css">
+
+    <link href="./Instituto Hidrográfico_files/lightbox.css" rel="stylesheet" id="lightbox-css">  
+    <link href="./Instituto Hidrográfico_files/blueimp-gallery.min.css" rel="stylesheet">
+    
+	<link href="./Instituto Hidrográfico_files/bootstrap-datepicker.min.css" rel="stylesheet">
+	<link href="./Instituto Hidrográfico_files/ih.css" rel="stylesheet" id="ih-css">    
+
+    <script type="text/javascript" async="" src="./Instituto Hidrográfico_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Instituto Hidrográfico_files/js"></script><script type="text/javascript" async="" src="./Instituto Hidrográfico_files/js(1)"></script><script src="./Instituto Hidrográfico_files/jquery-3.6.0.min.js.download"></script>
+    <script src="./Instituto Hidrográfico_files/tether.min.js.download"></script>
+	<script src="./Instituto Hidrográfico_files/bootstrap.min.js.download"></script>
+	<script src="./Instituto Hidrográfico_files/jquery.cookie.js.download"></script> 
+	<script src="./Instituto Hidrográfico_files/jquery.cookiebar.js.download"></script>
+
+	<script src="./Instituto Hidrográfico_files/ih-js.js.download"></script> 
+	
+    <!-- script type='text/javascript' src='js/modernizr.custom.min.js'></script -->       
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src='js/html5shiv.js'></script>
+      <script src='js/respond.min.js'></script>
+    <![endif]-->   
+
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>    
+    
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="./Instituto Hidrográfico_files/js(2)"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-1682957-1');
+	</script>
+
+
+    <link href="./Instituto Hidrográfico_files/slidder.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="./Instituto Hidrográfico_files/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="">
+
+    <style>
+
+
+    .datepicker-inline {
+        width: 100%;
+    }
+    .datepicker table {
+        width: 100%;
+    }
+
+    .leaflet-control-zoom {
+      border-radius: 0;
+      color: #0064a6;
+      }
+
+    .leaflet-control-zoom-in,
+    .leaflet-control-zoom-out {
+      border-radius: 0;
+      color: #0064a6;
+      }
+
+    .leaflet-control-layers {
+      box-shadow: 0 1px 5px rgba(0,100,166,0.4);
+      background: #FFF;
+      color: #0064a6;
+      border-radius: 0;
+      }
+
+    .leaflet-control-layers-toggle {
+      /* background-image: url(images/layers.png); */
+      width: 36px;
+      height: 36px;
+      }
+
+    </style>
+
+    <script src="./Instituto Hidrográfico_files/leaflet.js.download"></script>
+
+    <script src="./Instituto Hidrográfico_files/bouncemarker.js.download"></script>
+
+</head>
+
+<body>
+
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   - TOPBAR E NAVBAR -
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<div style="text-align:left" class="meta-top bg-dark">
+
+	
+
+
+	<div class="center box-top-bg-img ">
+		<img src="./Instituto Hidrográfico_files/IH-header-01.jpg" alt="topbanner"> 
+	</div>
+	
+	<div class="center" style="background-color:white;">
+		   				
+		<a href="https://www.hidrografico.pt/#main" style="text-decoration: underline;">Conteúdo Principal</a>
+		
+	</div>
+	
+	
+	
+	
+	<div style="text-align:left" class="box-top-fg-box">
+		<div class="container">	
+
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="top_logo_60anos">
+						<img src="./Instituto Hidrográfico_files/logo_hidrografico.svg" alt="Marinha Portuguesa - Instituto Hidrográfico">
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+
+	<div class="box-top-fg-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="pull-right">
+						<div class="flags-pos">
+							<a href="https://www.hidrografico.pt/index/pt" id="pt" class="flag-box32"><span class="flag pt"></span></a>
+							<a href="https://www.hidrografico.pt/index/en" id="en" class="flag-box32"><span class="flag en"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  	<div class="center over_banner">
+<nav class="navbar navbar-default navb-ih ihcolor" id="mainnav">
+
+	<div class="center container">
+	<div class="row">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle c-hamburger c-hamburger--htx" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+				<span>toggle menu</span>
+	        </button>
+	        <a class="navbar-brand hidden-md hidden-lg hidden" href="https://www.hidrografico.pt/#"><img src="./Instituto Hidrográfico_files/logo_hidrografico.svg" alt="Logotipo do IH"></a>
+	    </div>
+	    <!--/.navbar-header-->
+
+	    <div class="center collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav">
+				        <li class="dropdown">
+		        			<a class="nav-link" href="https://www.hidrografico.pt/#"><i class="fa fa-home"></i>  <span class="sr-only d0">(current)</span></a>
+		        		</li>
+
+
+										<li class="dropdown">
+							<a class="dropdown-toggle d1" href="https://www.hidrografico.pt/#" data-toggle="dropdown">IH<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/noticias/1/1">Notícias</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/1">O Instituto Hidrográfico</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/2">O Diretor-geral</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/45">Regulação Cartografia Hidrográfica </a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/6">Documentos institucionais</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/8">Revistas/Publicações</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/10">Qualidade</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/11">Recrutamento</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/51">Concursos públicos</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/63">Plano para a Igualdade</a></li>
+																	</ul>
+						</li>
+									
+									<li class="dropdown">
+							<a class="dropdown-toggle d2" href="https://www.hidrografico.pt/#" data-toggle="dropdown">Produtos<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/boias">Redes de Observação</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/prev.mare">Previsões</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/37">Segurança da Navegação</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/38">Avisos aos Navegantes</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/39">Publicações Náuticas</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/9">Cartas Náuticas</a></li>
+																	</ul>
+						</li>
+									
+									<li class="dropdown">
+							<a class="dropdown-toggle d3" href="https://www.hidrografico.pt/#" data-toggle="dropdown">Serviços<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/12">Serviços Laboratoriais</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/13">Apoio Operacional e Técnico</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/17">Instrumentação Marítima</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/19">Levantamentos hidrográficos</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/20">Monitorização ambiental e previsão operacional</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/21">Planeamento de viagens</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/22">Sinalização Marítima</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/23">Ensino e formação</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/16">Documentação, Cultura e Biblioteca</a></li>
+																	</ul>
+						</li>
+									
+									<li class="dropdown">
+							<a class="dropdown-toggle d4" href="https://www.hidrografico.pt/#" data-toggle="dropdown">Atividade<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/progs/1">Programas em curso</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/projs/1">Projetos em curso</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/jornadas/1/1">Jornadas Engenharia Hidrográfica</a></li>
+																	</ul>
+						</li>
+									
+									<li class="dropdown">
+							<a class="dropdown-toggle d5" href="https://www.hidrografico.pt/#" data-toggle="dropdown">Meios<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/26">Navios</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/27">Equipamentos</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/28">Laboratórios</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/29">Centro de Instrumentação Marítima</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/30">Missões e Brigadas Hidrográficas</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/47">CGEOMETOC</a></li>
+																	</ul>
+						</li>
+									
+									<li class="dropdown">
+							<a class="dropdown-toggle d6" href="https://www.hidrografico.pt/#" data-toggle="dropdown">Dados<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/31">Política de dados</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/33">Download Gratuito</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/tabelamares">Download Tabela de Marés</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/34">Catálogo de Metadados</a></li>
+																	</ul>
+						</li>
+									
+									<li class="dropdown">
+							<a class="dropdown-toggle d7" href="https://www.hidrografico.pt/#" data-toggle="dropdown">Infoteca<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/infoteca/1/1">Todos os artigos</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/infoteca/2/1">Conhecimento do Oceano</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/infoteca/3/1">Hidrografia</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/infoteca/4/1">Oceanografia</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/infoteca/5/1">Navegação</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/infoteca/6/1">Química Marinha</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/infoteca/7/1">Geologia Marinha</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/infoteca/8/1">Direito do Mar</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/infoteca/9/1">Missões especiais</a></li>
+																	</ul>
+						</li>
+									
+									<li class="dropdown">
+							<a class="dropdown-toggle d8" href="https://www.hidrografico.pt/#" data-toggle="dropdown">Galeria<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/gallery/1/1">Diretores-gerais</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/gallery/2/1">Instalações</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/gallery/3/1">Atividade</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/gallery/4/1">Meios</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/gallery/26/1">60 Anos do Instituto Hidrográfico</a></li>
+																	</ul>
+						</li>
+									
+									<li class="dropdown">
+							<a class="dropdown-toggle d9" href="https://www.hidrografico.pt/#" data-toggle="dropdown">Loja Navegante<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/op/36">A loja</a></li>
+																		<li><a class="dropdown-item" href="https://www.hidrografico.pt/whereln">Localização e contactos</a></li>
+																	</ul>
+						</li>
+									
+									<li class="dropdown">
+							<a class="dropdown-toggle d10" href="https://www.hidrografico.pt/#" data-toggle="dropdown">Hidrográfico +<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+																		<li><a class="dropdown-item" href="https://geomar.hidrografico.pt/">Acesso</a></li>
+																	</ul>
+						</li>
+									
+			 
+
+			</ul>
+
+				        <!--/</ul> -->
+	    </div>
+	</div>
+	</div>
+</nav>
+</div>
+</div>
+
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                  - FIM TOPBAR E NAVBAR -
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                  - DESTAQUES -
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+
+<div id="main" style="text-align:left" class="myslide">
+    <div id="homepage-feature" class="carousel slide " data-ride="carousel">
+
+        <ol class="carousel-indicators">
+        <li data-target="#homepage-feature" data-slide-to="0" class="active"></li><li data-target="#homepage-feature" data-slide-to="1"></li><li data-target="#homepage-feature" data-slide-to="2"></li><li data-target="#homepage-feature" data-slide-to="3"></li>        </ol>
+
+        <div class="carousel-inner">
+
+        <div class="item active">						
+                        <div class="carousel-inner" role="listbox">
+							
+                            <img class="d-block img-fluid" style="width:100%" src="./Instituto Hidrográfico_files/banner_seamap.jpg" alt="IH">
+							
+							
+                        </div>
+                        <div class="carousel-caption">
+                           <h2>
+                            Seamap2030                            </h2>
+                           <div class="hidden-xs">
+                           <!--aqui estava um <p> AJ -->
+                            <p>O projeto Seamap2030 tem por ambição obter a cobertura batimétrica completa dos espaços marítimos nacionais até 2030.</p><p>O cidadão pode desde já aceder aos dados do programa Seamap2030 de uma forma simples e intuitiva.</p>                           <!--aqui estava um </p> AJ -->
+                           </div>
+                           <p>
+                           <a class="btn btn-xs btn-custom" href="https://www.hidrografico.pt/destaque/71">
+                            Ler mais                            </a>
+                           </p>
+                        </div>
+                    </div>
+                    <div class="item">						
+                        <div class="carousel-inner" role="listbox">
+							
+                            <img class="d-block img-fluid" style="width:100%" src="./Instituto Hidrográfico_files/banner_hidro_mais.jpg" alt="IH">
+							
+							
+                        </div>
+                        <div class="carousel-caption">
+                           <h2>
+                            Hidrográfico +                            </h2>
+                           <div class="hidden-xs">
+                           <!--aqui estava um <p> AJ -->
+                            <p>Este portal organiza, sistematiza e disponibiliza dados relacionados com as atividades no mar, recolhidos pelo Instituto Hidrográfico,&nbsp;para a promoção do desenvolvimento económico e do uso seguro do mar Português.</p><p>&nbsp;</p>                           <!--aqui estava um </p> AJ -->
+                           </div>
+                           <p>
+                           <a class="btn btn-xs btn-custom" href="https://www.hidrografico.pt/destaque/70">
+                            Ler mais                            </a>
+                           </p>
+                        </div>
+                    </div>
+                    <div class="item">						
+                        <div class="carousel-inner" role="listbox">
+							
+                            <img class="d-block img-fluid" style="width:100%" src="./Instituto Hidrográfico_files/app_banner.jpg" alt="IH">
+							
+							
+                        </div>
+                        <div class="carousel-caption">
+                           <h2>
+                            Lançamento da nova app do Hidrográfico                            </h2>
+                           <div class="hidden-xs">
+                           <!--aqui estava um <p> AJ -->
+                            <p>Esta aplicação oferece à sociedade um acesso móvel e generalizado a dados e previsões oceanográficas, constituindo mais uma iniciativa do Instituto Hidrográfico para a promoção do desenvolvimento económico e do uso seguro do mar Português.</p>                           <!--aqui estava um </p> AJ -->
+                           </div>
+                           <p>
+                           <a class="btn btn-xs btn-custom" href="https://www.hidrografico.pt/destaque/68">
+                            Ler mais                            </a>
+                           </p>
+                        </div>
+                    </div>
+                    <div class="item">						
+                        <div class="carousel-inner" role="listbox">
+							
+                            <img class="d-block img-fluid" style="width:100%" src="./Instituto Hidrográfico_files/Avisos-Nav-grupo-mensal-pdf.jpg" alt="IH">
+							
+							
+                        </div>
+                        <div class="carousel-caption">
+                           <h2>
+                            Informação aos navegantes                            </h2>
+                           <div class="hidden-xs">
+                           <!--aqui estava um <p> AJ -->
+                            <p>O Instituto Hidrográfico disponibiliza o Grupo Mensal de Avisos aos Navegantes na sua página</p>                           <!--aqui estava um </p> AJ -->
+                           </div>
+                           <p>
+                           <a class="btn btn-xs btn-custom" href="https://www.hidrografico.pt/destaque/49">
+                            Ler mais                            </a>
+                           </p>
+                        </div>
+                    </div>
+                    		</div>
+
+        <a class="left carousel-control" href="https://www.hidrografico.pt/#homepage-feature" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" style="width: 50px; height: 50px; font-size:44px;"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="https://www.hidrografico.pt/#homepage-feature" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" style="width: 50px; height: 50px; font-size:44px;"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+</div>
+
+
+<div style="text-align:left" class="container dist-top-5">
+    <div style="text-align:left" class="row">
+        <div style="text-align:left" class="col-sm-12 col-md-12 col-lg-12">
+            <div class="top_bn">
+              <a href="https://www.hidrografico.pt/formemail" title="Enviar Email" class="btn btn-email"><i class="fa fa-envelope fa-fw"></i></a>
+              <a href="https://www.facebook.com/hidrografico" title="Facebook" class="btn btn-facebook"><i class="fa fa-facebook fa-fw"></i></a>
+              <a href="https://www.youtube.com/user/webmasterih" title="Youtube" class="btn btn-youtube"><i class="fa fa-youtube fa-fw"></i></a>
+            </div>
+        </div>
+		<h1>Destaques</h1>
+    </div>
+</div>
+
+
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                  - MARÉS -
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<div style="text-align:left" class="container dist-top-10 hidden-xs">
+    <div style="text-align:left" class="row">
+        <div style="text-align:left" class="col-sm-12 col-md-12 col-lg-12">
+            <div style="text-align:left" class="card card-ih">
+                  <div class="card-block">
+						
+                        <h2 class="card-title uppercase">Rede de boias + Previsão da maré</h2>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+	
+
+<div style="text-align:left" class="container hidden-xs">
+	<div style="text-align:left" class="row">
+		<div style="text-align:left" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div style="text-align:left" class="row">
+				<div style="text-align:left" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="comboboxbase">
+						<label for="dropdown_area">Área:</label>
+						<div class="input-group">
+							
+							<select class="form-control" id="dropdown_area" name="country_id"><option value="1" data-zom="6" data-lat="36.200001" data-lng="-17.600000">Portugal</option><option value="2" data-zom="7" data-lat="39.400002" data-lng="-9.939310">Portugal - Continental</option><option value="3" data-zom="10" data-lat="32.739998" data-lng="-16.895378">Portugal - Madeira</option><option value="4" data-zom="7" data-lat="38.579178" data-lng="-28.205278">Portugal - Açores</option><option value="20" data-zom="6" data-lat="-11.680494" data-lng="11.969149">Angola</option><option value="30" data-zom="8" data-lat="16.020168" data-lng="-24.341124">Cabo Verde</option><option value="40" data-zom="9" data-lat="11.599112" data-lng="-15.770463">Guiné-Bissau</option><option value="50" data-zom="11" data-lat="22.196218" data-lng="113.557358">Macau</option><option value="60" data-zom="6" data-lat="-19.085503" data-lng="37.756008">Moçambique</option><option value="70" data-zom="8" data-lat="0.971246" data-lng="7.008501">São Tomé e Princípe</option></select>							<div class="input-group-addon">
+								<i class="fa fa-flag-o"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div style="text-align:left" class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+					<div class="comboboxbase">
+						<label for="dd">Data maré:</label>
+						<div class="input-group date">	
+							<div><input type="text" class="form-control" id="dd" value="2022-09-19" data-date-format="yyyy-mm-dd"></div>
+							<div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></div>
+						</div>	
+					</div>
+									
+	            </div>
+
+				<div style="text-align:left" class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+					<div class="comboboxbase">
+						<label for="nd">Para quantos dias?:</label>
+						<div class="input-group">
+							
+						    <select name="nd" id="nd" class="form-control">
+						      	<!-- <option value="">Dias:</option> -->
+						      	<option value="0">1</option>
+						      	<option value="1">2</option>
+						      	<option value="2">3</option>
+						      	<option value="3">4</option>
+						      	<option value="4">5</option>
+						        <option value="5">6</option>
+						        <option value="6">7</option>
+						    </select>
+							<div class="input-group-addon"><i class="fa fa-calendar-o"></i></div>
+						</div><!-- /.input group -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="text-align:left" class="row">
+		<div style="text-align:left;" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div id="map" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;">
+			<div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(-14px, 236px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/14" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(504px, 161px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/14(1)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(504px, -95px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/13" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(248px, 161px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/15" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(760px, 161px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/14(2)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(504px, 417px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/13(1)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(248px, -95px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/15(1)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(760px, -95px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/13(2)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(248px, 417px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/15(2)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(760px, 417px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/12" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-8px, 161px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/16" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1016px, 161px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/12(1)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-8px, -95px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/16(1)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1016px, -95px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/12(2)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-8px, 417px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="./Instituto Hidrográfico_files/16(2)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1016px, 417px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/5/10/14" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(504px, -351px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/5/10/13" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(248px, -351px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/5/10/15" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(760px, -351px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/5/10/12" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-8px, -351px, 0px); opacity: 1;"><img alt="quadro do mapa" role="presentation" src="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/5/10/16" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1016px, -351px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="./Instituto Hidrográfico_files/ico_multiparametrica.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia multiparamétrica: Nazaré oceânica" tabindex="0" style="margin-left: -31px; margin-top: -36px; width: 52px; height: 52px; transform: translate3d(797px, 205px, 0px); z-index: 205;"><img src="./Instituto Hidrográfico_files/ico_multiparametrica.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia multiparamétrica: Nazaré costeira" tabindex="0" style="margin-left: -31px; margin-top: -36px; width: 52px; height: 52px; transform: translate3d(806px, 203px, 0px); z-index: 203;"><img src="./Instituto Hidrográfico_files/ico_multiparametrica.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia multiparamétrica: Leixões oceânica" tabindex="0" style="margin-left: -31px; margin-top: -36px; width: 52px; height: 52px; transform: translate3d(798px, 156px, 0px); z-index: 156; outline: none;"><img src="./Instituto Hidrográfico_files/ico_ondografo.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia ondógrafo: Leixões costeira" tabindex="0" style="margin-left: -41px; margin-top: -55px; width: 82px; height: 72px; transform: translate3d(812px, 151px, 0px); z-index: 151;"><img src="./Instituto Hidrográfico_files/ico_ondografo.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia ondógrafo: Sines" tabindex="0" style="margin-left: -41px; margin-top: -55px; width: 82px; height: 72px; transform: translate3d(813px, 251px, 0px); z-index: 251;"><img src="./Instituto Hidrográfico_files/ico_ondografo.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia ondógrafo: Faro costeira" tabindex="0" style="margin-left: -41px; margin-top: -55px; width: 82px; height: 72px; transform: translate3d(836px, 280px, 0px); z-index: 280;"><img src="./Instituto Hidrográfico_files/ico_ondografo.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia ondógrafo: Funchal" tabindex="0" style="margin-left: -41px; margin-top: -55px; width: 82px; height: 72px; transform: translate3d(630px, 399px, 0px); z-index: 399;"><img src="./Instituto Hidrográfico_files/ico_ondografo.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia ondógrafo: Caniçal" tabindex="0" style="margin-left: -41px; margin-top: -55px; width: 82px; height: 72px; transform: translate3d(635px, 396px, 0px); z-index: 396;"><img src="./Instituto Hidrográfico_files/ico_ondografo.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia ondógrafo: Selvagens" tabindex="0" style="margin-left: -41px; margin-top: -55px; width: 82px; height: 72px; transform: translate3d(654px, 465px, 0px); z-index: 465;"><img src="./Instituto Hidrográfico_files/ico_multiparametrica.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia multiparamétrica: Faro oceânica" tabindex="0" style="margin-left: -31px; margin-top: -36px; width: 52px; height: 52px; transform: translate3d(832px, 295px, 0px); z-index: 295;"><img src="./Instituto Hidrográfico_files/ico_ondografo.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia: Lajes das Flores" tabindex="0" style="margin-left: -41px; margin-top: -55px; width: 82px; height: 72px; transform: translate3d(307px, 209px, 0px); z-index: 209;"><img src="./Instituto Hidrográfico_files/ico_ondografo.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia: Graciosa" tabindex="0" style="margin-left: -41px; margin-top: -55px; width: 82px; height: 72px; transform: translate3d(380px, 217px, 0px); z-index: 217;"><img src="./Instituto Hidrográfico_files/ico_ondografo.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia: Faial/Pico" tabindex="0" style="margin-left: -41px; margin-top: -55px; width: 82px; height: 72px; transform: translate3d(367px, 232px, 0px); z-index: 232;"><img src="./Instituto Hidrográfico_files/ico_ondografo.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia: S. Miguel - Ponta Delgada" tabindex="0" style="margin-left: -41px; margin-top: -55px; width: 82px; height: 72px; transform: translate3d(431px, 257px, 0px); z-index: 257;"><img src="./Instituto Hidrográfico_files/ico_ondografo.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia: Terceira - Praia da Vitória" tabindex="0" style="margin-left: -41px; margin-top: -55px; width: 82px; height: 72px; transform: translate3d(401px, 227px, 0px); z-index: 227;"><img src="./Instituto Hidrográfico_files/ico_multiparametrica.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Boia multiparamétrica: Sines oceânica" tabindex="0" style="margin-left: -31px; margin-top: -36px; width: 52px; height: 52px; transform: translate3d(795px, 258px, 0px); z-index: 258;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(3664px, 2975px, 0px) scale(16);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-layers leaflet-control-layers-expanded leaflet-control" aria-haspopup="true"><a class="leaflet-control-layers-toggle" href="https://www.hidrografico.pt/#" title="Layers"></a><section class="leaflet-control-layers-list"><div class="leaflet-control-layers-base"><div><div><input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_58"><span> Satélite</span></div></div><div><div><input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_58" checked="checked"><span> Mapa ESRI</span></div></div></div><div class="leaflet-control-layers-separator" style="display: none;"></div><div class="leaflet-control-layers-overlays"></div></section></div></div><div class="leaflet-top leaflet-right"><div class="leaflet-control-layers leaflet-control-layers-expanded leaflet-control" aria-haspopup="true"><a class="leaflet-control-layers-toggle" href="https://www.hidrografico.pt/#" title="Layers"></a><section class="leaflet-control-layers-list"><div class="leaflet-control-layers-base"></div><div class="leaflet-control-layers-separator" style="display: none;"></div><div class="leaflet-control-layers-overlays"><div><div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> Previsões maré</span></div></div><div><div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> Rede de boias</span></div></div></div></section></div></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="https://www.hidrografico.pt/#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="https://www.hidrografico.pt/#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community</div></div></div></div>
+		</div>
+	</div>
+
+	<div style="text-align:left" class="row">
+		<div style="text-align:left" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div style="width:100%;margin:0 auto 50px;text-align:center;">Click sobre o ícone para abrir a janela de informação</div>
+		</div>
+	</div>
+
+</div>
+
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                  - FIM MARÉS -
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                  - LINKS RÁPIDOS -
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<div style="text-align:left" class="bkdest">
+
+    <div class="container dist-top-5">
+        <div class="row ">
+            <div class="col-sm-12 col-md-12 col-lg-12 dist-top-5">
+                <div class="card card-ih">
+                      <div class="card-block">
+                            <h2 class="card-title uppercase">Principais conteúdos</h2>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align:left" class="container dist-top-5">
+        <div class="row">
+
+            <div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://www.hidrografico.pt/m.mare" data-title="PREVISÃO DE MARÉS" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/PrevMare.jpg" alt="PREVISÃO DE MARÉS"><div class="content"><div class="center"><h2>PREVISÃO DE</h2><h3>MARÉS</h3><h4>Tabela/telemóvel</h4></div></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://www.hidrografico.pt/prev.mare" data-title="PREVISÃO DE MARÉS" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/PrevMare.jpg" alt="PREVISÃO DE MARÉS"><div class="content"><div class="center"><h2>PREVISÃO DE</h2><h3>MARÉS</h3><h4>Mapa/PC/Tablet</h4></div></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://www.hidrografico.pt/tabelamares" data-title="Tabela de marés" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/TabMares.jpg" alt="Tabela de marés"><div class="content"><div class="center"><h2>Tabela de</h2><h3>MARÉS</h3><h4>Descarga</h4></div></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://www.hidrografico.pt/m.boias" data-title="Rede de boias" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/Boias.jpg" alt="Rede de boias"><div class="content"><div class="center"><h2>Dados das</h2><h3>BOIAS</h3><h4>Tabela/Telemóvel</h4></div></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://www.hidrografico.pt/boias" data-title="Rede de boias" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/Boias.jpg" alt="Rede de boias"><div class="content"><div class="center"><h2>Dados das</h2><h3>BOIAS</h3><h4>Mapa/PC/Tablet</h4></div></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://www.hidrografico.pt/radar.map" data-title="Radar HF" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/Radar.jpg" alt="Radar HF"><div class="content"><div class="center"><h2>Dados dos</h2><h3>RADARES HF</h3><h4>Tempo real</h4></div></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://www.hidrografico.pt/qtonda" data-title="Qual a tua onda?" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/QTOnda.jpg" alt="Qual a tua onda?"><div class="content"><div class="center"><h2>Qual a tua</h2><h3>ONDA?</h3><h4>Previsões</h4></div></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://marinetech.hidrografico.pt/" data-title="Workshop" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/Divulgacao_Marinetech_Internet.jpg" alt="Workshop"><div class="content"><div class="center"><h4>MARINETECH</h4></div></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="http://anavnet.hidrografico.pt/" data-title="Avisos aos Navegantes" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/Anavnet.jpg" alt="Avisos aos Navegantes"><div class="content"><h2>Avisos aos</h2><h3>NAVEGANTES</h3></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://www.hidrografico.pt/cart.porto" data-title="Cartas Históricas dos Portos" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/Cartas_historicas.jpg" alt="Cartas Históricas dos Portos"><div class="content"><h2>Cartas Históricas</h2><h3>DOS PORTOS</h3></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://www.hidrografico.pt/op/59" target="_blank" data-title="APP Hidrográfico" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/thumbnail_app.jpg" alt="APP Hidrográfico"><div class="content"><h2>APP</h2><h3>HIDROGRÁFICO +</h3><h4>para smartphones</h4></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://loja.hidrografico.pt/" target="_blank" data-title="Loja do Navegante" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/Loja_navegante.jpg" alt="Loja do Navegante"><div class="content"><h2>Loja do</h2><h3>NAVEGANTE</h3></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://www.hidrografico.pt/vn.douro" target="_blank" data-title="Via Navegável do Douro" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/VNDouro2.jpg" alt="Via Navegável do Douro"><div class="content"><h2>Via Navegável</h2><h3>DOURO</h3><h4>Cartas eletrónicas</h4></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://jornadas.hidrografico.pt/" target="_blank" data-title="7.ª&amp;sups Jornadas EH" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/JEH2022.png" alt="7.ª&amp;sups Jornadas EH"><div class="content"><h2>ENGENHARIA</h2><h2>HIDROGRÁFICA</h2><h4>Jornadas EH</h4></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://geomar.hidrografico.pt/" data-title="Hidrográfico +" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/Divulgacao_Hidrografico_Mais.jpg" alt="Hidrográfico +"><div class="content"><div class="center"><h4>Hidrográfico +</h4></div></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://www.hidrografico.pt/gallery/26/1" data-title="Galeria 60 IH" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/60_anos_IH.jpg" alt="Galeria 60 IH"><div class="content"><div class="center"><h2>Instituto Hidrográfico</h2><h3>60 anos</h3></div></div></a></div></div><div class="irow col-xs-6 col-sm-4 col-md-2"><div class="prodbox"><a href="https://gridmar.hidrografico.pt/" data-title="Seamap2030" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/seamap_principal_conteudo.jpg" alt="Seamap2030"><div class="content"><div class="center"><h4>Seamap2030</h4></div></div></a></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                  - FIM LINKS RÁPIDOS -
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+
+
+<div style="text-align:left" class="bkwhite">
+
+    <div class="container dist-top-20">
+        <div class="row ">
+            <div class="col-sm-12 col-md-12 col-lg-12 dist-top-20">
+                <div class="card card-ih">
+                      <div class="card-block">
+                            <h2 class="card-title uppercase">Últimas notícias</h2>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container dist-top-20 dist-bot-20">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row clearfix"><div class="irow col-xs-12 col-sm-6 col-md-4 col-lg-4"><div class="thumbnails" data-toggle="lightbox"><a href="https://www.hidrografico.pt/noticia/948" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/20220916-visita-nova-ims-1.jpg" alt="O Instituto Hidrográfico recebe visita da NOVA-Information Management School"></a></div><div class="Datevent"><i class="fa fa-clock-o" aria-hidden="true"></i> 16-09-2022</div><div class="BoxNews"><a href="https://www.hidrografico.pt/noticia/948">O Instituto Hidrográfico recebe visita da NOVA-Information Management School</a></div></div><div class="irow col-xs-12 col-sm-6 col-md-4 col-lg-4"><div class="thumbnails" data-toggle="lightbox"><a href="https://www.hidrografico.pt/noticia/947" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/20220915-assinatura-protocolo-indico-3.jpg" alt="Instituto Hidrográfico assina protocolo de cooperação com a INDICO"></a></div><div class="Datevent"><i class="fa fa-clock-o" aria-hidden="true"></i> 15-09-2022</div><div class="BoxNews"><a href="https://www.hidrografico.pt/noticia/947">Instituto Hidrográfico assina protocolo de cooperação com a INDICO</a></div></div><div class="irow col-xs-12 col-sm-6 col-md-4 col-lg-4"><div class="thumbnails" data-toggle="lightbox"><a href="https://www.hidrografico.pt/noticia/946" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/20220914-conselho-orientacao-ih-1.jpg" alt="Reunião do Conselho de Orientação do IH"></a></div><div class="Datevent"><i class="fa fa-clock-o" aria-hidden="true"></i> 14-09-2022</div><div class="BoxNews"><a href="https://www.hidrografico.pt/noticia/946">Reunião do Conselho de Orientação do IH</a></div></div></div><div class="arow row clearfix"></div>                <div class="center">
+                <a href="https://www.hidrografico.pt/noticias/1/1" id="more_noticias" class="btn btn-md btn-blue">
+                Notícias anteriores</a>
+                </div>
+
+            
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+
+<div style="text-align:left" class="bkgray">
+
+    <div class="container dist-top-20"> 
+        <div class="row">   
+            <div class="col-sm-12 col-md-12 col-lg-12 dist-top-20">
+                <div class="card card-ih">                   
+                      <div class="card-block">
+                            <h2 class="card-title uppercase">Principais p
+rogramas e projetos em curso</h2>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container dist-top-10"> 
+     
+        <div class="row proj-gutter"><div class="bot-buffer col-xs-12 col-sm-6 col-md-4 col-lg-4"><div class="box-proj"><div class="thumbnails" data-toggle="lightbox"><div class="center"><a href="https://www.hidrografico.pt/iprojeto/5" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/sedmar.jpg" alt="Cartografia dos sedimentos marinhos"></a></div></div><div class="Datevent"><i class="fa fa-calendar" aria-hidden="true"></i> 01-07-2013 / 31-12-2020</div><div class="BoxNews"><a href="https://www.hidrografico.pt/iprojeto/5">Cartografia dos sedimentos marinhos</a></div></div><div class="box-proj-bartop"></div><div class="box-proj-barbot"></div></div><div class="bot-buffer col-xs-12 col-sm-6 col-md-4 col-lg-4"><div class="box-proj"><div class="thumbnails" data-toggle="lightbox"><div class="center"><a href="https://www.hidrografico.pt/iprojeto/46" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/simb_saga3.jpg" alt="SAGA –  Sistema de Apoio à Gestão Portuária"></a></div></div><div class="Datevent"><i class="fa fa-calendar" aria-hidden="true"></i> 01-01-2018 / 30-06-2021</div><div class="BoxNews"><a href="https://www.hidrografico.pt/iprojeto/46">SAGA –  Sistema de Apoio à Gestão Portuária</a></div></div><div class="box-proj-bartop"></div><div class="box-proj-barbot"></div></div><div class="bot-buffer col-xs-12 col-sm-6 col-md-4 col-lg-4"><div class="box-proj"><div class="thumbnails" data-toggle="lightbox"><div class="center"><a href="https://www.hidrografico.pt/iprojeto/45" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/logo_Alternativa_1.png" alt="IH no Projeto &#39;SimShore&#39;, para um serviço operacional de atualização da topo batimetria do litoral"></a></div></div><div class="Datevent"><i class="fa fa-calendar" aria-hidden="true"></i> 01-11-2020 / 31-10-2022</div><div class="BoxNews"><a href="https://www.hidrografico.pt/iprojeto/45">IH no Projeto 'SimShore', para um serviço operacional de atualização da topo batimetria do litoral</a></div></div><div class="box-proj-bartop"></div><div class="box-proj-barbot"></div></div><div class="bot-buffer col-xs-12 col-sm-6 col-md-4 col-lg-4"><div class="box-proj"><div class="thumbnails" data-toggle="lightbox"><div class="center"><a href="https://www.hidrografico.pt/iprojeto/16" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/All_white.jpg" alt="PROGRAMA SEAMAP 2030 (MAPEAMENTO DO MAR PORTUGUÊS)"></a></div></div><div class="Datevent"><i class="fa fa-calendar" aria-hidden="true"></i> 01-01-2017 / 31-12-2020</div><div class="BoxNews"><a href="https://www.hidrografico.pt/iprojeto/16">PROGRAMA SEAMAP 2030 (MAPEAMENTO DO MAR PORTUGUÊS)</a></div></div><div class="box-proj-bartop"></div><div class="box-proj-barbot"></div></div><div class="bot-buffer col-xs-12 col-sm-6 col-md-4 col-lg-4"><div class="box-proj"><div class="thumbnails" data-toggle="lightbox"><div class="center"><a href="https://www.hidrografico.pt/iprojeto/24" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/mycoast-com-logo.jpg" alt="MyCoast"></a></div></div><div class="Datevent"><i class="fa fa-calendar" aria-hidden="true"></i> 15-11-2017 / 15-07-2020</div><div class="BoxNews"><a href="https://www.hidrografico.pt/iprojeto/24">MyCoast</a></div></div><div class="box-proj-bartop"></div><div class="box-proj-barbot"></div></div><div class="bot-buffer col-xs-12 col-sm-6 col-md-4 col-lg-4"><div class="box-proj"><div class="thumbnails" data-toggle="lightbox"><div class="center"><a href="https://www.hidrografico.pt/iprojeto/27" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/mqdefault.jpg" alt="MELOA - Multi-purpose/Multi-sensor Extra Light Oceanography Apparatus"></a></div></div><div class="Datevent"><i class="fa fa-calendar" aria-hidden="true"></i> 01-12-2017 / 28-02-2021</div><div class="BoxNews"><a href="https://www.hidrografico.pt/iprojeto/27">MELOA - Multi-purpose/Multi-sensor Extra Light Oceanography Apparatus</a></div></div><div class="box-proj-bartop"></div><div class="box-proj-barbot"></div></div><div class="bot-buffer col-xs-12 col-sm-6 col-md-4 col-lg-4"><div class="box-proj"><div class="thumbnails" data-toggle="lightbox"><div class="center"><a href="https://www.hidrografico.pt/iprojeto/29" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/AQUIMAR.jpg" alt="AQUIMAR "></a></div></div><div class="Datevent"><i class="fa fa-calendar" aria-hidden="true"></i> 01-08-2018 / 31-07-2021</div><div class="BoxNews"><a href="https://www.hidrografico.pt/iprojeto/29">AQUIMAR </a></div></div><div class="box-proj-bartop"></div><div class="box-proj-barbot"></div></div><div class="bot-buffer col-xs-12 col-sm-6 col-md-4 col-lg-4"><div class="box-proj"><div class="thumbnails" data-toggle="lightbox"><div class="center"><a href="https://www.hidrografico.pt/iprojeto/35" class="thumbnail1"><img style="width:100%" src="./Instituto Hidrográfico_files/Projeto_Hidrografico_Plus.jpg" alt="Hidrográfico +"></a></div></div><div class="Datevent"><i class="fa fa-calendar" aria-hidden="true"></i> 08-05-2018 / 30-06-2021</div><div class="BoxNews"><a href="https://www.hidrografico.pt/iprojeto/35">Hidrográfico +</a></div></div><div class="box-proj-bartop"></div><div class="box-proj-barbot"></div></div>                <div class="center dist-bot-5">
+                <a href="https://www.hidrografico.pt/progs/1" id="more_progs" class="btn btn-md btn-blue">
+                Todos os programas</a>
+                <a href="https://www.hidrografico.pt/projs/1" id="more_projs" class="btn btn-md btn-blue">
+                Todos os projetos</a>
+                </div>
+              </div>
+    </div>
+
+
+</div>
+
+
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   - FOOTER BANNER -
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<div style="text-align:left" class="footerpic"><img src="./Instituto Hidrográfico_files/20191121_NRP_Gago_Coutinho.jpg" style="width:100%" alt="Imagem de fundo"></div>
+
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                     - FOOTER -
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<div class="center">
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	                   - FOOTER -
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<footer style="text-align:left" class="site-footer">
+	<div class="subfooterbox">
+	    <div class="container">
+			<div class="row">
+
+				<div class="col-sm-12 col-md-4">
+					<div id="logos_footer">
+					<span class="logos-mdn"><img src="./Instituto Hidrográfico_files/RepublicaPortuguesa.png" alt="Republica Portuguesa"></span>
+					<span class="logos-marinha"><a href="https://www.marinha.pt/pt" target="_self"><img src="./Instituto Hidrográfico_files/MarinhaPortuguesa.png" alt="Marinha Portuguesa"></a></span>					
+					<span class="logos-ih-footer pull-right"><img src="./Instituto Hidrográfico_files/logo_hidrografico_1.svg" alt="Logotipo do IH"></span>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-4">
+					<div class="copyrih">
+						<div class="center">
+						INSTITUTO HIDROGRÁFICO @ 2022<p><a href="https://www.hidrografico.pt/op/48" target="_self"><u>Aviso legal</u></a> | <a href="https://www.hidrografico.pt/op/49" target="_self"><u>Cookies</u></a> | <a href="https://www.hidrografico.pt/formemail" target="_self"><u>Contactar</u></a> | <a href="https://www.hidrografico.pt/acessibilidade" target="_self"><u>Acessibilidade</u></a></p>
+						</div>
+					</div>			
+				</div>
+
+				<div class="col-sm-12 col-md-4">
+					<span>
+						<button class="btn btn-sm btn-blue dist-top-10" data-toggle="collapse" data-target="#sitemapcollapseDiv">
+							Mapa do portal						</button>
+					</span>	
+					<span style="vertical-align: middle;" class="selo-prata">
+						<img src="./Instituto Hidrográfico_files/prata.svg" alt="Selo de Prata - Acessibilidade">
+					</span>	
+					<span class="logos-apcer pull-right">
+						<img src="./Instituto Hidrográfico_files/iso9001_apcer.png" alt="ISO 9001">
+					</span>	
+						
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--	<a name="idsm"></a> -->
+
+	<div class="collapse" id="sitemapcollapseDiv">
+		<div class="sitemapbox">
+			<div class="container">
+			<div class="row">
+				<div class="col-sm-12 sitemapbordertop1">
+
+					<ul class="sitemap">				
+											<li>	
+							IH							<ul>
+																<li><a href="https://www.hidrografico.pt/noticias/1/1" target="_blank">Notícias</a></li>
+																<li><a href="https://www.hidrografico.pt/op/1" target="_blank">O Instituto Hidrográfico</a></li>
+																<li><a href="https://www.hidrografico.pt/op/2" target="_blank">O Diretor-geral</a></li>
+																<li><a href="https://www.hidrografico.pt/op/45" target="_blank">Regulação Cartografia Hidrográfica </a></li>
+																<li><a href="https://www.hidrografico.pt/op/6" target="_blank">Documentos institucionais</a></li>
+																<li><a href="https://www.hidrografico.pt/op/8" target="_blank">Revistas/Publicações</a></li>
+																<li><a href="https://www.hidrografico.pt/op/10" target="_blank">Qualidade</a></li>
+																<li><a href="https://www.hidrografico.pt/op/11" target="_blank">Recrutamento</a></li>
+																<li><a href="https://www.hidrografico.pt/op/51" target="_blank">Concursos públicos</a></li>
+																<li><a href="https://www.hidrografico.pt/op/63" target="_blank">Plano para a Igualdade</a></li>
+															</ul>
+						</li>
+											<li>	
+							Produtos							<ul>
+																<li><a href="https://www.hidrografico.pt/boias" target="_blank">Redes de Observação</a></li>
+																<li><a href="https://www.hidrografico.pt/prev.mare" target="_blank">Previsões</a></li>
+																<li><a href="https://www.hidrografico.pt/op/37" target="_blank">Segurança da Navegação</a></li>
+																<li><a href="https://www.hidrografico.pt/op/38" target="_blank">Avisos aos Navegantes</a></li>
+																<li><a href="https://www.hidrografico.pt/op/39" target="_blank">Publicações Náuticas</a></li>
+																<li><a href="https://www.hidrografico.pt/op/9" target="_blank">Cartas Náuticas</a></li>
+															</ul>
+						</li>
+											<li>	
+							Serviços							<ul>
+																<li><a href="https://www.hidrografico.pt/op/12" target="_blank">Serviços Laboratoriais</a></li>
+																<li><a href="https://www.hidrografico.pt/op/13" target="_blank">Apoio Operacional e Técnico</a></li>
+																<li><a href="https://www.hidrografico.pt/op/17" target="_blank">Instrumentação Marítima</a></li>
+																<li><a href="https://www.hidrografico.pt/op/19" target="_blank">Levantamentos hidrográficos</a></li>
+																<li><a href="https://www.hidrografico.pt/op/20" target="_blank">Monitorização ambiental e previsão operacional</a></li>
+																<li><a href="https://www.hidrografico.pt/op/21" target="_blank">Planeamento de viagens</a></li>
+																<li><a href="https://www.hidrografico.pt/op/22" target="_blank">Sinalização Marítima</a></li>
+																<li><a href="https://www.hidrografico.pt/op/23" target="_blank">Ensino e formação</a></li>
+																<li><a href="https://www.hidrografico.pt/op/16" target="_blank">Documentação, Cultura e Biblioteca</a></li>
+															</ul>
+						</li>
+											<li>	
+							Atividade							<ul>
+																<li><a href="https://www.hidrografico.pt/progs/1" target="_blank">Programas em curso</a></li>
+																<li><a href="https://www.hidrografico.pt/projs/1" target="_blank">Projetos em curso</a></li>
+																<li><a href="https://www.hidrografico.pt/jornadas/1/1" target="_blank">Jornadas Engenharia Hidrográfica</a></li>
+															</ul>
+						</li>
+											<li>	
+							Meios							<ul>
+																<li><a href="https://www.hidrografico.pt/op/26" target="_blank">Navios</a></li>
+																<li><a href="https://www.hidrografico.pt/op/27" target="_blank">Equipamentos</a></li>
+																<li><a href="https://www.hidrografico.pt/op/28" target="_blank">Laboratórios</a></li>
+																<li><a href="https://www.hidrografico.pt/op/29" target="_blank">Centro de Instrumentação Marítima</a></li>
+																<li><a href="https://www.hidrografico.pt/op/30" target="_blank">Missões e Brigadas Hidrográficas</a></li>
+																<li><a href="https://www.hidrografico.pt/op/47" target="_blank">CGEOMETOC</a></li>
+															</ul>
+						</li>
+											<li>	
+							Dados							<ul>
+																<li><a href="https://www.hidrografico.pt/op/31" target="_blank">Política de dados</a></li>
+																<li><a href="https://www.hidrografico.pt/op/33" target="_blank">Download Gratuito</a></li>
+																<li><a href="https://www.hidrografico.pt/tabelamares" target="_blank">Download Tabela de Marés</a></li>
+																<li><a href="https://www.hidrografico.pt/op/34" target="_blank">Catálogo de Metadados</a></li>
+															</ul>
+						</li>
+											<li>	
+							Infoteca							<ul>
+																<li><a href="https://www.hidrografico.pt/infoteca/1/1" target="_blank">Todos os artigos</a></li>
+																<li><a href="https://www.hidrografico.pt/infoteca/2/1" target="_blank">Conhecimento do Oceano</a></li>
+																<li><a href="https://www.hidrografico.pt/infoteca/3/1" target="_blank">Hidrografia</a></li>
+																<li><a href="https://www.hidrografico.pt/infoteca/4/1" target="_blank">Oceanografia</a></li>
+																<li><a href="https://www.hidrografico.pt/infoteca/5/1" target="_blank">Navegação</a></li>
+																<li><a href="https://www.hidrografico.pt/infoteca/6/1" target="_blank">Química Marinha</a></li>
+																<li><a href="https://www.hidrografico.pt/infoteca/7/1" target="_blank">Geologia Marinha</a></li>
+																<li><a href="https://www.hidrografico.pt/infoteca/8/1" target="_blank">Direito do Mar</a></li>
+																<li><a href="https://www.hidrografico.pt/infoteca/9/1" target="_blank">Missões especiais</a></li>
+															</ul>
+						</li>
+											<li>	
+							Galeria							<ul>
+																<li><a href="https://www.hidrografico.pt/gallery/1/1" target="_blank">Diretores-gerais</a></li>
+																<li><a href="https://www.hidrografico.pt/gallery/2/1" target="_blank">Instalações</a></li>
+																<li><a href="https://www.hidrografico.pt/gallery/3/1" target="_blank">Atividade</a></li>
+																<li><a href="https://www.hidrografico.pt/gallery/4/1" target="_blank">Meios</a></li>
+																<li><a href="https://www.hidrografico.pt/gallery/26/1" target="_blank">60 Anos do Instituto Hidrográfico</a></li>
+															</ul>
+						</li>
+											<li>	
+							Loja Navegante							<ul>
+																<li><a href="https://www.hidrografico.pt/op/36" target="_blank">A loja</a></li>
+																<li><a href="https://www.hidrografico.pt/whereln" target="_blank">Localização e contactos</a></li>
+															</ul>
+						</li>
+											<li>	
+							Hidrográfico +							<ul>
+																<li><a href="https://geomar.hidrografico.pt/" target="_blank">Acesso</a></li>
+															</ul>
+						</li>
+					 		 
+					</ul>
+
+				</div>
+			</div>
+			</div>
+		</div>	
+	</div>
+</footer>
+
+
+
+<script>
+$(document).ready(function() {
+	$('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+
+<script>
+$('#sitemapcollapseDiv').on('shown.bs.collapse', function () {
+   $(".btn-blue .fa").removeClass("fa-plus-circle").addClass("fa-minus-circle");
+   //window.scrollTo(0,document.body.scrollHeight);
+   window.scrollTo(0, 500);
+});
+
+$('#sitemapcollapseDiv').on('hidden.bs.collapse', function () {
+   $(".btn-blue .fa").removeClass("fa-minus-circle").addClass("fa-plus-circle");
+});
+</script>
+
+
+
+<script>
+$('#btnTop').each(function(){
+    $(this).click(function(){ 
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false; 
+    });
+});
+</script>
+
+
+<!--
+
+<script type="text/javascript">
+$(window).on("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 55);
+});
+</script>
+
+-->
+
+<script>
+	//javascript:alert(document.cookie)
+	$.cookieBar({
+		message: 'Usamos cookies APENAS para guardar as preferências relativas à língua e ao tamanho das letras.', //Message displayed on bar
+		acceptText: 'Ok, aceito', //Text on accept/enable button
+	});	
+</script>
+
+
+<script>
+  (function() {
+
+    "use strict";
+
+    var toggles = document.querySelectorAll(".c-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+
+  })();
+</script>
+
+<script>
+$(document).ready(function() {
+  var navpos = $('#mainnav').offset();
+  console.log(navpos.top);
+    $(window).bind('scroll', function() {
+      if ($(window).scrollTop() > navpos.top) {
+       	 $('#mainnav').addClass('navbar-fixed-top');
+       	 $('.navbar-brand').removeClass('hidden'); 
+       	 $('.navbar-default').removeClass('ihcolor');       	 
+       }
+       else {
+         $('#mainnav').removeClass('navbar-fixed-top');
+         $('.navbar-brand').addClass('hidden'); 
+         $('.navbar-default').addClass('ihcolor');  
+       }
+    });
+});
+</script>
+</div>
+
+<script src="./Instituto Hidrográfico_files/jquery-ui.min.js.download"></script>
+
+<script src="./Instituto Hidrográfico_files/bootstrap-datepicker.js.download"></script>
+<script src="./Instituto Hidrográfico_files/bootstrap-datetimepicker.pt.js.download"></script>
+<script src="./Instituto Hidrográfico_files/bootstrap-datetimepicker.en.js.download"></script>
+
+
+<script>
+    $(function () {   
+		$("#dd").datepicker({
+        language: "pt",
+        startDate: "1999-01-01",
+        endDate: "2023-12-31", 
+        todayHighlight: true,
+        todayBtn: true,     
+        format: 'yyyy-mm-dd',       
+        autoclose: true,
+        bootcssVer: 3,
+        minView: 2,
+		orientation: "bottom auto"
+        });
+    });
+</script> 
+
+
+<script>
+$('#mapcollapseDiv1').on('shown.bs.collapse', function () { 
+   $(".botao1 .fa").removeClass("fa-plus-circle").addClass("fa-minus-circle");
+   //window.scrollTo(0,document.body.scrollHeight);
+});
+
+$('#mapcollapseDiv1').on('hidden.bs.collapse', function () { 	
+   	$(".botao1 .fa").removeClass("fa-minus-circle").addClass("fa-plus-circle");
+   	$('html,body').animate({ scrollTop: 550 }, 'slow');
+});
+
+$('#mapcollapseDiv2').on('shown.bs.collapse', function () {
+   $(".botao2 .fa").removeClass("fa-plus-circle").addClass("fa-minus-circle");
+  // window.scrollTo(0,document.body.scrollHeight);
+});
+
+$('#mapcollapseDiv2').on('hidden.bs.collapse', function () {
+   	$(".botao2 .fa").removeClass("fa-minus-circle").addClass("fa-plus-circle");
+    $('html,body').animate({ scrollTop:700 }, 'slow');
+});
+
+$('#mapcollapseDiv3').on('shown.bs.collapse', function () {
+   $(".botao3 .fa").removeClass("fa-plus-circle").addClass("fa-minus-circle");
+  // window.scrollTo(0,document.body.scrollHeight);
+});
+
+$('#mapcollapseDiv3').on('hidden.bs.collapse', function () {
+   	$(".botao3 .fa").removeClass("fa-minus-circle").addClass("fa-plus-circle");
+    $('html,body').animate({ scrollTop:700 }, 'slow');
+});
+
+</script>
+
+
+<script>
+
+var map;
+var gmarkers = [];
+
+var popup = L.popup();
+
+  var port = L.icon({
+      iconUrl: 'mapicons/ico_previsao_mares.svg',  
+      iconSize:     [40, 40], // size of the icon  
+      //shadowSize:   [50, 64], // size of the shadow
+      iconAnchor:   [20, 38], // point of the icon which will correspond to marker's location
+      //shadowAnchor: [4, 62],  // the same for the shadow
+      popupAnchor:  [-3, -20] // point from which the popup should open relative to the iconAnchor
+  });
+
+
+  var boia1 = L.icon({
+      iconUrl: 'mapicons/ico_ondografo.svg',  
+      iconSize:     [82, 72], // size of the icon  
+      //shadowSize:   [50, 72], // size of the shadow
+      iconAnchor:   [41, 55], // point of the icon which will correspond to marker's location
+      //shadowAnchor: [4, 72],  // the same for the shadow
+      popupAnchor:  [0, -20] // point from which the popup should open relative to the iconAnchor
+  });
+
+  var boia2 = L.icon({
+      iconUrl: 'mapicons/ico_multiparametrica.svg',  
+      iconSize:     [52, 52], // size of the icon  
+      //shadowSize:   [50, 64], // size of the shadow
+      iconAnchor:   [31, 36], // point of the icon which will correspond to marker's location
+      //shadowAnchor: [4, 62],  // the same for the shadow
+      popupAnchor:  [0, -20] // point from which the popup should open relative to the iconAnchor
+  });
+
+  var boia3 = L.icon({
+      iconUrl: 'mapicons/ico_ondografo.svg',  
+      iconSize:     [82, 72], // size of the icon  
+      //shadowSize:   [50, 64], // size of the shadow
+      iconAnchor:   [41, 55], // point of the icon which will correspond to marker's location
+      //shadowAnchor: [4, 62],  // the same for the shadow
+      popupAnchor:  [0, -20] // point from which the popup should open relative to the iconAnchor
+  });
+
+
+
+var customOptions =
+        {
+        'className' : 'custom',        
+        };
+
+var E1 = new L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+   attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+
+var E2 = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+});
+
+var Esri_WorldStreetMap = new L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Powered by Esri | Esri, HERE, Garmin, USGS, NGA'
+});
+
+var Map_BaseLayer = {
+    "Satélite": E1,
+    "Mapa ESRI": Esri_WorldStreetMap
+};
+
+map = L.map('map', {
+    center: [36.2, -19.6],
+    zoom: 5,
+    zoomControl: true,
+    layers: [Esri_WorldStreetMap]
+});
+
+L.control.layers(Map_BaseLayer, null, { position:"topleft", collapsed: false }).addTo(map);
+
+map.zoomControl.setPosition('bottomright');
+
+var myFeatureGroup1 = L.featureGroup()
+    .bindPopup('Loading...', customOptions)
+    .on("click", onMapClick1)
+    .addTo(map);
+
+var myFeatureGroup2 = L.featureGroup()
+    .bindPopup('Loading...', customOptions)
+    .on("click", onMapClick2)
+    .addTo(map);
+
+
+changeLoc(36.2, -19, 5);
+
+
+function mare_initialize() {
+
+	var marker;
+	var mDataJSON;
+
+	$.ajax({
+		dataType: "json",
+		url: 'json/mare.ports.php',
+		data: mDataJSON,
+		success: function (mDataJSON) {
+
+			for (var i = 0; i < mDataJSON.length; i++) 
+      {
+
+        if(mDataJSON[i].id == 152) {continue;}
+				if (mDataJSON[i].type == 1) { var bicon = port; var typeEquip = "Marégrafo";};
+
+				console.log(mDataJSON[i].id);
+				Port = mDataJSON[i].id;
+				marker = L.marker([mDataJSON[i].lat, mDataJSON[i].lng], {icon: bicon, alt: typeEquip + ": " + mDataJSON[i].name}).addTo(myFeatureGroup1);
+				marker.port = Port;
+				marker.name = mDataJSON[i].name;
+				marker.bindTooltip(mDataJSON[i].name);
+
+                marker.itype = "1";
+
+			}
+
+		}
+	});
+}
+
+
+function boias_initialize() {
+
+    var marker1;
+    var mDataJSON1;  
+    $.ajax({
+        dataType: "json",
+        url: 'json/boias.json.php',
+        data: mDataJSON1,
+        success: function (mDataJSON1) {
+
+        for (var i = 0; i < mDataJSON1.length; i++) {
+
+            if (mDataJSON1[i].type == 1) { var bicon = boia1; var typeEquip = "Boia ondógrafo";};
+            if (mDataJSON1[i].type == 2) { var bicon = boia2; var typeEquip = "Boia multiparamétrica";};
+            if (mDataJSON1[i].type == 3) { var bicon = boia3; var typeEquip = "Boia";};
+
+        Boia = mDataJSON1[i].id;
+        Grf = mDataJSON1[i].id_grf;
+
+        marker1 = L.marker([mDataJSON1[i].lat, mDataJSON1[i].lng], {icon: bicon, alt: typeEquip + ": " + mDataJSON1[i].name}).addTo(myFeatureGroup2);
+
+        marker1.boia = Boia;
+        marker1.grf = Grf;
+        marker1.name = mDataJSON1[i].name;
+        marker1.id_est = mDataJSON1[i].id_est;
+        marker1.id_eqp = mDataJSON1[i].id_eqp;
+        marker1.dbname = mDataJSON1[i].dbname;
+        marker1.address = mDataJSON1[i].address;
+        marker1.gmt = mDataJSON1[i].gmt;
+        marker1.dtz = mDataJSON1[i].dtz;
+        marker1.boia_url = mDataJSON1[i].boia_url;
+        marker1.boia_vis = mDataJSON1[i].vis;
+        
+        marker1.itype = "2";
+
+        marker1.bindTooltip(mDataJSON1[i].name);
+
+      }
+    }
+  });
+}
+
+
+mare_initialize(); 
+boias_initialize(); 
+
+var overlays = {
+    "Previsões maré" : myFeatureGroup1,
+    "Rede de boias": myFeatureGroup2
+};
+
+L.control.layers(null, overlays, { position:"topright", collapsed: false }).addTo(map);
+
+
+function onMapClick1(e) {
+
+    var popup = e.target.getPopup();   
+
+    var dd = document.getElementById("dd").value ;
+    var nd = document.getElementById("nd").value ;
+
+    var idPorto = 0; //
+    if (e.layer.port == 16) {     
+      if (dd < "2023-01-01"){
+        idPorto = 16;
+      }
+      else{
+        idPorto = 152;
+      }
+    }   
+    else{
+      idPorto = e.layer.port;
+    }
+
+    
+
+
+    MapTitle = e.layer.name;      
+  
+        PortId = e.layer.port;
+        $.ajax({
+            type : 'GET',
+            url : 'json/mare.port.val.php',
+            data : {po: ''+idPorto+'', dd: ''+dd+'', nd: ''+nd+''},      
+
+            beforeSend: function() {
+                popup.setContent('<center><img src="/img/loading_09.gif" /><h4>A ler dados...</h4></center>');
+                popup.update();
+            },
+
+            success: function(data) {
+                popup.setContent('<div class="marker-info-win">'+
+                '<div class="marker-inner-win"><span class="info-content">'+
+                '<h2 class="marker-heading">'+MapTitle+'</h2>'+data+
+                '</spam>'+
+                '</div></div>');
+                popup.update();
+            }
+        });
+};
+
+
+function onMapClick2(e) {
+
+    var popup = e.target.getPopup();
+
+    var dd = document.getElementById("dd").value ;
+    var nd = document.getElementById("nd").value ;
+    MapTitle = e.layer.name;    
+      
+        BoiaId = e.layer.boia; 
+        id_est = e.layer.id_est;
+        id_eqp = e.layer.id_eqp;
+        dbname= e.layer.dbname; 
+        name = e.layer.name; 
+        address = e.layer.address; 
+        gmt = e.layer.gmt; 
+        dtz = e.layer.dtz; 
+        boia_url = e.layer.boia_url;
+        boia_vis = e.layer.boia_vis;
+
+        $.ajax({
+          type : 'GET',
+          url : 'json/prod.boias.process.php',
+          data : {key: ''+123+'', id_est: ''+id_est+'', id_eqp: ''+id_eqp+'', dbn: ''+dbname+'', name: ''+name+'', address: ''+address+'', gmt: ''+gmt+'', dtz: ''+dtz+'', boia_url: ''+boia_url+'', boia_vis: ''+boia_vis+''},
+          //async: false,   
+
+        beforeSend: function() {
+          popup.setContent('<center><img src="/img/loading_09.gif" /><h4>A ler dados...</h4></center>');
+          popup.update();
+        },
+
+        success: function(data) {
+
+        popup.setContent('<div class="marker-info-win">'+
+        '<div class="marker-inner-win"><span class="info-content">'+
+        '<h2 class="marker-heading">'+name+'</h2><h3 class="marker-heading">'+address+'</h3><class="marker-data">'+data+
+        '</div></spam>'+
+        '</div></div>');
+        popup.update();
+
+        }
+    });
+};
+
+
+$("#dropdown").change(function() {
+	var country_id = $(this).val();
+    var dd = document.getElementById("dd").value ;
+    var nd = document.getElementById("nd").value ;
+
+	var lat = $("#dropdown option:selected").data('lat');
+	var lng = $("#dropdown option:selected").data('lng');
+	var zom = $("#dropdown option:selected").data('zom');
+
+	changeLoc(lat, lng, zom);
+
+});	
+
+
+$("#nd").change(function() {
+	removeMarkers();
+});	
+
+
+$("#dd").change(function() {
+	removeMarkers();
+});
+
+
+function removeMarkers(){
+    //for(i=0; i<gmarkers.length; i++){
+        //gmarkers[i].setMap(null);
+        //layer.closePopup();
+        map.closePopup();
+    //}
+}
+
+
+function changeLoc(lat, lng, zom) {
+
+    var mq = window.matchMedia( "(min-width: 1200px)" );
+	if (mq.matches) {
+	    map.setView(new L.LatLng(lat, lng), zom);
+	}
+    var mq = window.matchMedia( "(max-width: 1200px)" );
+	if (mq.matches) {
+		map.setView(new L.LatLng(lat, lng), zom-1);
+	}
+    var mq = window.matchMedia( "(max-width: 992px)" );
+	if (mq.matches) {
+		map.setView(new L.LatLng(lat, lng), zom-1);
+	}        
+    var mq = window.matchMedia( "(max-width: 768px)" );
+	if (mq.matches) {
+	    map.setView(new L.LatLng(lat, lng), zom-2);
+	}  
+
+}
+
+</script>
+
+<script src="./Instituto Hidrográfico_files/lightbox.min.js.download"></script><div class="center"><div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://www.hidrografico.pt/"></a><a class="lb-next" href="https://www.hidrografico.pt/"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></div> 
+  
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+
+
+</body></html>
